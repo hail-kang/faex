@@ -191,12 +191,17 @@ repos:
 
 ## Development
 
+This project uses [uv](https://github.com/astral-sh/uv) for dependency management with `pyproject.toml`.
+
 ```bash
 # Clone the repository
 git clone https://github.com/hail-kang/faex.git
 cd faex
 
-# Create virtual environment and install dependencies
+# Create virtual environment in project root
+uv venv
+
+# Install dependencies from pyproject.toml
 uv sync
 
 # Run tests
